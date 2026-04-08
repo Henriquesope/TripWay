@@ -6,7 +6,16 @@
     <title>Contato/Reserva</title>
 </head>
 <body>
-    <a href="index.html">Voltar</a>
+    <nav>
+        <a href="/index.html">TripWay</a>
+        <ul>
+            <li><a href="/pages/servicos.html">Serviços</a></li>
+            <li><a href="/pages/destinos.html">Destinos</a></li>
+            <li><a href="/pages/contato.html">Contato</a></li>
+       </ul>
+    </nav>
+
+    <a href="/index.html">Voltar</a>
     
 </body>
 <main>
@@ -19,18 +28,23 @@
             </div>
             <div>
                 <label for="E-mail">E-mail</label>
-                <input type="text" id="E-mail" placeholder="joaocleber@gmail.com" required>
+                <input type="email" id="E-mail" placeholder="joaocleber@gmail.com" required>
             </div>
             <div>
                 <label for="Destino de interesse">Destino de interesse</label>
-                <input type="text" id="destino" placeholder="Ex: Rio de janeiro" required>
+                <select name="estados" id="Destino de interesse" required>
+                    <option value="" disabled selected>Escolha um lugar...</option>
+                    <option value="salvador">Salvador</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    <option value="sao-paulo">São Paulo</option>
+                </select>
             <div>
                 <label for="Data">Data</label>
-                <input type="number" id="Data" placeholder="Ex: 11/09/2026" required>
+                <input type="date" id="Data" placeholder="Ex: 11/09/2026" required>
             </div>
             <div>
                 <label for="Quantidade de Pessoas">Quantidade de Pessoas</label>
-                <input type="number"  id="Quantidade" placeholder="Ex:7" required>
+                <input type="number"  id="Quantidade de Pessoas" placeholder="Ex:7" required>
             </div>
             <div>
                 <label for="Mensagem">Mensagem</label>
