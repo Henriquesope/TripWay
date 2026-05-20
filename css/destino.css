@@ -1,7 +1,6 @@
 .hero-destinos {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 60px 80px;
   background-color: #f0f4f8;
 }
@@ -17,6 +16,7 @@
   font-size: 1.2rem;
   color: #444;
 }
+
 .cards-container {
   padding: 60px 80px;
   display: flex;
@@ -26,21 +26,28 @@
 
 .card {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #e0e0e0;
   overflow: hidden;
+  max-height: 280px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .card img {
   width: 400px;
-  height: 250px;
+  min-width: 400px;
+  max-width: 400px;
+  height: 280px;
   object-fit: cover;
 }
 
 .card-texto {
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-texto h2 {
@@ -53,4 +60,28 @@
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+* {
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  height: 280px;
+  object-fit: cover;
+}
+footer {
+  background-color: #0a2540;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.9rem;
 }
