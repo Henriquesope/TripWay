@@ -75,3 +75,27 @@ header p {
   line-height: 1.6;
   margin-bottom: 12px;
 }
+.sobre {
+  padding: 60px 80px;
+  background-color: #ffffff;
+}
+
+.sobre h1 {
+  font-size: 2rem;
+  color: #0a2540;
+  margin-bottom: 16px;
+}
+
+.sobre p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 600px;
+}
+footer {
+  background-color: #0a2540;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.9rem;
+}
