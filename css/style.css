@@ -35,3 +35,43 @@ nav ul a:hover {
 body {
   font-family: 'Poppins', sans-serif;
 }
+.hero-imagem img {
+  width: 500px;
+  height: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   padding: 60px 80px;
+   background-color: #f0f4f8;
+}
+.subtitulo {
+  font-size: 1.3rem;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 16px;
+}
+.btn-hero {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.btn-hero:hover {
+  background-color: #0a2540;
+}
+header p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
